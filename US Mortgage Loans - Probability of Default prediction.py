@@ -561,7 +561,7 @@ for i in ['REtype_SF_orig_time', 'investor_orig_time']:
     plt.show()
 # Again, majority class overepresents at almost any LTV value.
 
-# Based on the data exploration results, we could see that it is almost impossible to create any interaction or transforming the data
+# Based on the data exploration results, we could see that it is almost impossible to create any interaction or to transform the data
 # in the way that tells which class apart from the other.
 
 # TRAIN VARIOUS MODELS ON RESAMPLED DATA:
@@ -740,8 +740,8 @@ model_params = ['lr', 'knn', 'svc', 'rf', 'xgbc', 'nnc', 'lgbc']
 #        with open(f'study_{j}_{i}.pkl', 'wb') as study_file:
 #            pickle.dump(study, study_file)
 
-# NOTICE !!!!! If you have run the previous loop (the one that takes more than a day to finish) to get the best parameters, please skip the loop below as it simply import the best
-# parameters obtained from the previous step
+# NOTICE !!!!! If you have already run the previous loop (the one that takes more than a day to finish) to get the best parameters, please skip the loop below as it simply imports the best
+# parameters obtained from the previous step. Otherwise, you must execute these lines below:
 
 ### BEGINNING OF SKIPPABLE PART ###  
 best_param_dict = {}
@@ -942,7 +942,6 @@ validation(rf_results['fit'].values, rf_results['outcome'].values, rf_results['t
 validation(xgbc_results['fit'].values, xgbc_results['outcome'].values, xgbc_results['time'].values, 'XGBoost Classifier')
 validation(nnc_results['fit'].values, nnc_results['outcome'].values, nnc_results['time'].values, 'Deep Neural Network Classifier')
 validation(lgbc_results['fit'].values, lgbc_results['outcome'].values, lgbc_results['time'].values, 'LightGBM Classifier')
-validation(ada_results['fit'].values, ada_results['outcome'].values, ada_results['time'].values, 'AdaBoost Classifier')
 # Best performer is Random Forest based on overall performance on various metrics. However, it tends to overact during stressed periods.
 # Logistic Regression and Support Vector Machine overshoots PD projection in their entirety of prediction.
 # Deep Neural Network, XGBoost and LightGBM do a decent job at forecasting but tend to underpredict PD.
