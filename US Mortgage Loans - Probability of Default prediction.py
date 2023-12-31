@@ -7,7 +7,7 @@ Created on Sun Dec 24 17:44:00 2023
 
 import warnings; warnings.simplefilter('ignore')
 import os
-os.chdir('C:\\Users\\Lenovo\\Desktop\\Deep Credit Risk')
+os.chdir('C:\\Users\\Lenovo\\Desktop\\ML1and2')
 import pickle
 import joblib
 import numpy as np
