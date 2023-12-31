@@ -3,13 +3,13 @@ Student name: Nam Hoang
 
 ID: 370134
 
-Note:
+# Note:
 
 This repository contains materials for a joint ML1 and ML2 project. Both inputs and outputs are used for the purpose of those 2 projects.
 
 In order to execute the project, make sure all the zip files are decompressed and saved in the same locale.
 
-Description of files:
+# Description of files:
 - US Mortgage Loans - Probability of Default prediction.py: the code is used to generate probability of default prediction for machine learning models within the scope of this project.
 - dcr.rar: the dataset.
 - models_hyperparameters.rar: all the tunned hyperparameters of machine learning models. You can load these hyperparameters instead of running calibration process which takes MORE THAN A DAY to complete.
