@@ -17,4 +17,4 @@ Description of files:
 
 # NOTES:
 - If you decide to execute the code as a whole, it will take up to 2 days or more. However, we can take a shortcut by loading files from models_hyperparameters.rar and out_sample_df.rar.
-- There are skippable parts in the code, user needs to read the comment carefully before deciding whether to run the code. Most of the time, these parts are related to the generation of outputs of models_hyperparameters.rar and out_sample_df.rar.
+- There are skippable parts in the code, user needs to read the comment carefully before deciding whether to run these parts of the code. Most of the time, these parts are related to the generation of outputs of models_hyperparameters.rar and out_sample_df.rar.
