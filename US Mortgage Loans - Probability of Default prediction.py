@@ -28,7 +28,6 @@ from sklearn.pipeline import make_pipeline
 from imblearn.combine import SMOTEENN 
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
-from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
